@@ -1,0 +1,48 @@
+﻿<link href="~/Content/Calendar.css" rel="stylesheet" />
+<div id="calendar"></div>
+@section Scripts {
+
+    <script src="~/Scripts/fullcalendar.min.js"></script>
+    <script>
+        var date = new Date();
+        var d = date.getDate();
+        var m = date.getMonth();
+        var y = date.getFullYear();
+
+        $('#calendar').fullCalendar({
+            header: {
+                left: 'prev,next today',
+                center: 'title',
+                right: 'month,agendaWeek,agendaDay'
+            },
+            editable: true,
+            events: [
+              {
+                  id: 1,
+                  title: 'Joe Bloggs - Appointment',
+                  start: new Date(y, m, d, 09, 30),
+                  allDay: false
+              },
+              {
+                  id: 2,
+                  title: 'Jane Bloggs - Appointment',
+                  start: new Date(y, m, d, 10, 30),
+                  allDay: false
+              },
+              {
+                  id: 3,
+                  title: 'John Smyth - Appointment',
+                  start: new Date(y, m, d, 13, 45),
+                  allDay: false
+              },
+              {
+                  title: 'All Day Event',
+                  start: new Date(y, m, 4),
+                  end: new Date(y, m, 5),
+                  allDay: false
+              }
+            ]
+        });
+</script>
+
+}

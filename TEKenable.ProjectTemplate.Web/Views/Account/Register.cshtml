@@ -1,0 +1,52 @@
+﻿@model RegisterModel
+@{
+    ViewBag.Title = "Register";
+}
+
+<h2>Create a new account.</h2>
+
+<div class="row">
+    @if (TempData["SuccessMessage"] == null)
+    {
+        using (Html.BeginForm("Register", "Account", FormMethod.Post, new { @class = "form col-md-6 center-block" }))
+        {
+        @Html.AntiForgeryToken()
+        @Html.ValidationSummary()
+
+        <h3>Registration Form</h3>
+        <div class="form-group">
+
+            @Html.LabelFor(m => m.UserName)
+            @Html.TextBoxFor(m => m.UserName, new { @class = "form-control", placeHolder = "Enter User name" })
+        </div>
+        <div class="form-group">
+
+            @Html.LabelFor(m => m.Password)
+            @Html.PasswordFor(m => m.Password, new { @class = "form-control", placeHolder = "Enter Password" })
+        </div>
+        <div class="form-group">
+            @Html.LabelFor(m => m.ConfirmPassword)
+            @Html.PasswordFor(m => m.ConfirmPassword, new { @class = "form-control", placeHolder = "Enter Confirm Password" })
+        </div>
+        <div class="form-group">
+            @Html.LabelFor(m => m.FirstName)
+            @Html.TextBoxFor(m => m.FirstName, new { @class = "form-control", placeHolder = "Enter First Name" })
+        </div>
+        <div class="form-group">
+            @Html.LabelFor(m => m.LastName)
+            @Html.TextBoxFor(m => m.LastName, new { @class = "form-control", placeHolder = "Enter Last Name" })
+        </div>
+        <input type="submit" value="Register" class="btn btn-primary" />
+        }
+    }
+    else
+    {
+        <div class="alert alert-success" role="alert">
+            <strong>Success!</strong> @TempData["SuccessMessage"]
+        </div>
+    }
+</div>
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}

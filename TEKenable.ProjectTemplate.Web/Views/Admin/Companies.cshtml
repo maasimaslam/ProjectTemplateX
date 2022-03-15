@@ -1,0 +1,126 @@
+﻿@model CompanySearchModel
+
+@{
+    ViewBag.Title = "Manage Companies";
+}
+
+<div class="row">
+    <div class="col-md-12">
+        <div class="panel panel-default">
+            <div class="panel-heading"><h1>Companies</h1></div>
+            <div class="panel-body">
+                <div class="row">
+                    @using (Html.BeginForm("Companies", "Admin", FormMethod.Get))
+                    {
+                        <div class="col-sm-5">
+                            @Html.TextBox("searchString", Model.currentFilter, new { @class = "form-control", placeholder = "Search" })
+                        </div>
+                        <div class="col-sm-7">
+                            <button class="btn btn-default btn-sm" type="submit"><span class="glyphicon glyphicon-plus-sign"></span>&nbsp;Search</button>
+                            <a href="@Url.Action("CompanyDetails")" class="btn btn-default btn-sm"><span class="glyphicon glyphicon-plus-sign"></span>&nbsp;Add New Company</a>
+                        </div>
+                    }
+                </div>
+                <div class="table-responsive">
+                    <table class="table table-hover table align-middle">
+                        <thead>
+                            <tr>
+                                <th width="10">#</th>
+                                <th>
+                                    @Html.ActionLink("Name", "Companies", new { sortOrder = "Cname", currentFilter = Model.currentFilter })
+                                </th>
+                                <th>
+                                    @Html.ActionLink("Type", "Companies", new { sortOrder = "Ctype", currentFilter = Model.currentFilter })
+                                </th>
+                                <th>
+                                    @Html.ActionLink("Business", "Companies", new { sortOrder = "Cbusiness", currentFilter = Model.currentFilter })
+                                </th>
+                                <th>
+                                    @Html.ActionLink("Department", "Companies", new { sortOrder = "Cdepartment", currentFilter = Model.currentFilter })
+                                </th>
+                                <th>
+                                    @Html.ActionLink("Grade", "Companies", new { sortOrder = "Cgrade", currentFilter = Model.currentFilter })
+                                </th>
+                                <th>
+                                    @Html.ActionLink("Contact", "Companies", new { sortOrder = "Ccontact", currentFilter = Model.currentFilter })
+                                </th>
+                                <th></th>
+                            </tr>
+                        </thead>
+                        @{int j = 1; }
+                        @foreach (var item in Model.ListData)
+                        {
+                            <tr id="@item.CompanyId">
+                                <td>@j</td>
+                                <td>
+                                    @Html.DisplayFor(modelItem => item.CompanyName)<br />
+                                    <a href="http://@Html.DisplayFor(modelItem => item.CompanyEmail)" target="_blank">@Html.DisplayFor(modelItem => item.CompanyEmail)</a>
+                                </td>
+                                <td>
+                                    @Html.DisplayFor(modelItem => item.CompanyType)
+                                </td>
+                                <td>
+                                    @Html.DisplayFor(modelItem => item.CompanyBusiness)
+                                </td>
+                                <td>
+                                    @Html.DisplayFor(modelItem => item.CompanyDepartment)
+                                </td>
+                                <td>
+                                    @Html.DisplayFor(modelItem => item.CompanyGrade)
+                                </td>
+                                <td>
+                                    @Html.DisplayFor(modelItem => item.CompanyContact) <br />
+                                    
+                                    <a href="mailto:@Html.DisplayFor(modelItem => item.CompanyEmail)">@Html.DisplayFor(modelItem => item.CompanyEmail)</a>
+</td>
+                                <td>
+                                    @Html.ActionLink("Edit", "CompanyDetails", new { id = item.CompanyId })
+                                    @*|@Html.ActionLink("Details", "CompanyDetails", new { id = item.CompanyId }) |
+        @Html.ActionLink("Delete", "CompanyDetails", new { id = item.CompanyId })*@
+                                </td>
+                            </tr>
+                            j = j + 1;
+                        }
+                    </table>
+                    Page @(Model.ListData.PageCount < Model.ListData.PageNumber ? 0 : Model.ListData.PageNumber) of @Model.ListData.PageCount
+
+                    @Html.PagedListPager(Model.ListData, page => Url.Action("Companies",
+                        new
+                        {
+                            page,
+                            sortOrder = Model.CurrentSort,
+                            currentFilter = Model.currentFilter,
+                            currentStyleFilter = Model.currentFilter
+                        }))
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="modalDel" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" data-url="@Url.Action("Delete")">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                <h4 class="modal-title">Modal title</h4>
+            </div>
+            <div class="modal-body">
+                Are you sure you want to delete the Company?
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">No</button>
+                <button type="button" class="btn btn-primary" onclick="deleteconfirm();">Yes</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+@section Scripts {
+    <script>
+        $(document).ready(function () {
+
+        });
+    </script>
+}

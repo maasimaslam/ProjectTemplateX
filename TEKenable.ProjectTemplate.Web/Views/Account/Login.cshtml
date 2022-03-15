@@ -1,0 +1,38 @@
+﻿@model LoginModel
+@{
+    ViewBag.Title = "Log in";
+}
+
+<hgroup class="title">
+    <h1>@ViewBag.Title</h1>
+</hgroup>
+
+<section id="loginForm">
+    <div class="row">
+        @using (Html.BeginForm("Login", "Account", new { returnUrl = Request.QueryString["ReturnUrl"] }, FormMethod.Post, new { @class = "form col-md-6 center-block" }))
+        {
+            @Html.AntiForgeryToken()
+            @Html.ValidationSummary(true)
+            <div class="form-group">
+                @Html.TextBoxFor(m => m.user_name, new { @class = "form-control", placeHolder = "Enter User name" })
+                @Html.ValidationMessageFor(m => m.user_name)
+            </div>
+            <div class="form-group">
+                @Html.PasswordFor(m => m.password, new { @class = "form-control", placeHolder = "Enter Password" })
+                @Html.ValidationMessageFor(m => m.password)
+            </div>
+            <div class="form-group">
+                @Html.CheckBoxFor(m => m.RememberMe)
+                @Html.LabelFor(m => m.RememberMe)
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Log in" class="btn btn-primary" />
+            </div>
+        }
+    </div>
+</section>
+
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}

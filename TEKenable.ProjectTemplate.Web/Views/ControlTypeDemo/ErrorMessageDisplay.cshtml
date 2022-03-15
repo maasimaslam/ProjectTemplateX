@@ -1,0 +1,141 @@
+﻿@model TEKenable.ProjectTemplate.Web.Models.Demo.EMDEmployee
+@using ProjectTemplate.HTMLHelpers
+@{
+    ViewBag.Title = "Error Message Display";
+}
+
+<h1>Error Message Display</h1>
+
+<div class="row">
+    @using (Html.BeginForm("ErrorMessageDisplay", "ControlTypeDemo", FormMethod.Post, new { @class = "form-horizontal" }))
+    {
+        @Html.AntiForgeryToken()
+        @Html.Partial("ValidationSummary", ViewData.ModelState)
+
+        <div class="form-group">
+            <div class="col-md-6 col-sm-6">
+                <div class="col-md-4 col-sm-4">
+                    @Html.LabelFor(m => m.Id, new { @class = "mandatory-field" })
+                </div>
+                <div class="col-md-7 col-sm-7">
+                    @Html.TextBoxFor(m => m.Id, new { @class = "form-control" })
+                </div>
+                <div class="col-md-1 col-sm-1">
+                    @Html.ProjectTemplateValidationMessageFor(m => m.Id, "")
+                </div>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <div class="col-md-6 col-sm-6">
+                <div class="col-md-4 col-sm-4">
+                    @Html.LabelFor(m => m.FirstName, new { @class = "mandatory-field" })
+                </div>
+                <div class="col-md-7 col-sm-7">
+                    @Html.TextBoxFor(m => m.FirstName, new { @class = "form-control" })
+                </div>
+                <div class="col-md-1 col-sm-1">
+                    
+                    @Html.ValidationMessageFor(m => m.FirstName)
+                </div>
+            </div>
+            <div class="col-md-6 col-sm-6">
+                <div class="col-md-4 col-sm-4">
+                    @Html.LabelFor(m => m.LastName, new { @class = "mandatory-field" })
+                </div>
+                <div class="col-md-7 col-sm-7">
+                    @Html.TextBoxFor(m => m.LastName, new { @class = "form-control" })
+                </div>
+                <div class="col-md-1 col-sm-1">
+                    @Html.ProjectTemplateValidationMessageFor(m => m.LastName, "")
+                </div>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <div class="col-md-6 col-sm-6">
+                <div class="col-md-4 col-sm-4">
+                    @Html.LabelFor(m => m.Age, new { @class = "mandatory-field" })
+                </div>
+                <div class="col-md-7 col-sm-7">
+                    @Html.TextBoxFor(m => m.Age, new { @class = "form-control" })
+                </div>
+                <div class="col-md-1 col-sm-1">
+                    @Html.ProjectTemplateValidationMessageFor(m => m.Age, "")
+                </div>
+            </div>
+            <div class="col-md-6 col-sm-6">
+                <div class="col-md-4 col-sm-4">
+                    @Html.LabelFor(m => m.NumberOfCars, new { @class = "mandatory-field" })
+                </div>
+                <div class="col-md-7 col-sm-7">
+                    @Html.TextBoxFor(m => m.NumberOfCars, new { @class = "form-control" })
+                </div>
+                <div class="col-md-1 col-sm-1">
+                    @Html.ProjectTemplateValidationMessageFor(m => m.NumberOfCars, "")
+                </div>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <div class="col-md-6 col-sm-6">
+                <div class="col-md-4 col-sm-4">
+                    @Html.LabelFor(m => m.NumberOfDogs, new { @class = "mandatory-field" })
+                </div>
+                <div class="col-md-7 col-sm-7">
+                    @Html.TextBoxFor(m => m.NumberOfDogs, new { @class = "form-control" })
+                </div>
+                <div class="col-md-1 col-sm-1">
+                    @Html.ProjectTemplateValidationMessageFor(m => m.NumberOfDogs, "")
+                </div>
+            </div>
+            <div class="col-md-6 col-sm-6">
+                <div class="col-md-4 col-sm-4">
+                    @Html.LabelFor(m => m.CompanyName, new { @class = "mandatory-field" })
+                </div>
+                <div class="col-md-7 col-sm-7">
+                    @Html.TextBoxFor(m => m.CompanyName, new { @class = "form-control" })
+                </div>
+                <div class="col-md-1 col-sm-1">
+                    @Html.ProjectTemplateValidationMessageFor(m => m.CompanyName, "")
+                </div>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <div class="col-md-6 col-sm-6">
+                <div class="col-md-4 col-sm-4">
+                    @Html.LabelFor(m => m.Position, new { @class = "mandatory-field" })
+                </div>
+                <div class="col-md-7 col-sm-7">
+                    @Html.TextBoxFor(m => m.Position, new { @class = "form-control" })
+                </div>
+                <div class="col-md-1 col-sm-1">
+                    @Html.ProjectTemplateValidationMessageFor(m => m.Position, "")
+                </div>
+            </div>
+            <div class="col-md-6 col-sm-6">
+                <div class="col-md-4 col-sm-4">
+                    @Html.LabelFor(m => m.Department, new { @class = "mandatory-field" })
+                </div>
+                <div class="col-md-7 col-sm-7">
+                    @Html.TextBoxFor(m => m.Department, new { @class = "form-control" })
+                </div>
+                <div class="col-md-1 col-sm-1">
+                    @Html.ProjectTemplateValidationMessageFor(m => m.Department, "")
+                </div>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <div class="col-md-6 col-sm-6">
+                <input type="submit" value="Save" class="btn btn-primary" />
+            </div>
+        </div>
+    }
+</div>
+
+@section Scripts
+{
+    @Scripts.Render("~/bundles/jqueryval")
+}

@@ -1,0 +1,31 @@
+﻿@model TEKenable.ProjectTemplate.Web.Models.Demo.AutocompliteMultiModel
+
+@using (Ajax.BeginForm("AutocompliteMulti", "ControlTypeDemo", new AjaxOptions { UpdateTargetId = "_target", OnSuccess = "_updateControls()" }, new { @class = "form" }))
+{
+    <h1>Autocomplete (Multi)</h1>
+    @Html.ListBoxFor(m => m.E9, Model.E9SelectListItems, new { style = "width: 300px;", @class = "populate", tabindex = "-1" })
+
+    if (ViewBag.E9Selected != null)
+    { 
+    <p>
+        @ViewBag.E9Selected
+    </p>
+    }
+    <br />
+
+    <h1>Load Results Via AJAX</h1>
+    <div class="form-group">
+        @Html.HiddenFor(m => m.AjaxSelect, new { style = "width: 300px" })
+    </div>
+    
+    if (ViewBag.AjaxSelected != null)
+    { 
+    <p>
+        @ViewBag.AjaxSelected
+    </p>
+    }
+
+    <div class="form-group">
+        <button type="submit" class="btn btn-primary">Post</button>
+    </div>
+}

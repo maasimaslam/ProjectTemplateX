@@ -1,0 +1,56 @@
+﻿@model TEKenable.ProjectTemplate.Web.Models.Demo.AutocompliteMultiModel
+@{
+    ViewBag.Title = "Autocomplete (Multi)";
+}
+<div id="_target">
+    @Html.Partial("_MultiSelectDropdown", Model)
+</div>
+@section scripts{
+
+    @Scripts.Render("~/bundles/jqueryval")
+
+    <script type="text/javascript">
+        function _updateControls() {
+            $("#E9").select2();
+            $("#E9").select2('val', $("#E9").val());
+            //this javascript call sets up the select2 that loads search results via ajax calls
+            $('#AjaxSelect').select2({
+                placeholder: 'Select a class',
+                minimumInputLength: 1,
+                multiple: true,
+                ajax: {
+                    url: '@Url.Action("SearchClasses", "ControlTypeDemo")',
+                    dataType: 'json',
+                    data: function (term, page) {
+                        return {
+                            searchTerm: term
+                        };
+                    },
+                    results: function (data, page) {
+                        return { results: data };
+                    }
+                },
+                initSelection: function (element, callback) {
+                    var data = [];
+                    $(element.val().split(",")).each(function () {
+                        var id = this;
+                        if (id !== "") {
+                            $.ajax("@Url.Action("GetClass", "ControlTypeDemo")" + "/" + id, {
+                                dataType: "json",
+                                async: false
+                            }).done(function (d) {
+                                data.push(d);
+                            });
+                        }
+                    });
+                    callback(data);
+                }
+            });
+        }
+
+        $(document).ready(function () {
+            _updateControls();
+        });
+
+    </script>
+}

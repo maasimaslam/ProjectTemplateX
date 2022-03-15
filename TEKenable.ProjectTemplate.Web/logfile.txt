@@ -1,0 +1,473 @@
+2014-11-26 06:59:14,668 [1] INFO ASP.global_asax - Application_Start executed
+2014-11-26 07:18:20,453 [33] DEBUG TEKenable.NHIS.Services.SecurityService - MyService constructor
+2014-11-26 07:19:01,290 [1] INFO ASP.global_asax - Application_Start executed
+2014-11-26 07:19:01,461 [6] DEBUG TEKenable.NHIS.Web.Controllers.HomeController - Home Controller initialized
+2014-11-26 07:19:01,644 [8] DEBUG TEKenable.NHIS.Services.SecurityService - MyService constructor
+2014-11-26 07:20:14,333 [6] DEBUG TEKenable.NHIS.Services.SecurityService - MyService constructor
+2014-11-26 07:20:16,363 [8] DEBUG TEKenable.NHIS.Services.SecurityService - MyService constructor
+2014-11-26 07:20:16,461 [8] DEBUG TEKenable.NHIS.Web.Controllers.HomeController - Home Controller initialized
+2014-11-26 07:20:24,439 [6] DEBUG TEKenable.NHIS.Services.SecurityService - MyService constructor
+2014-11-26 07:20:24,529 [6] DEBUG TEKenable.NHIS.Web.Controllers.HomeController - Home Controller initialized
+2014-11-26 07:20:24,714 [6] ERROR TEKenable.NHIS.Web.Infrastructure.CustomHandleErrorAttribute - Attempted to divide by zero.
+System.DivideByZeroException: Attempted to divide by zero.
+   at TEKenable.NHIS.Web.Controllers.HomeController.Test() in d:\Projects\NHIS\BitBucket\hrb\NHIS\TEKenable.NHIS.Web\Controllers\HomeController.cs:line 45
+   at lambda_method(Closure , ControllerBase , Object[] )
+   at System.Web.Mvc.ActionMethodDispatcher.Execute(ControllerBase controller, Object[] parameters)
+   at System.Web.Mvc.ReflectedActionDescriptor.Execute(ControllerContext controllerContext, IDictionary`2 parameters)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethod(ControllerContext controllerContext, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.ActionInvocation.InvokeSynchronousActionMethod()
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.<BeginInvokeSynchronousActionMethod>b__39(IAsyncResult asyncResult, ActionInvocation innerInvokeState)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`2.CallEndDelegate(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResultBase`1.End()
+   at System.Web.Mvc.Async.AsyncResultWrapper.End[TResult](IAsyncResult asyncResult, Object tag)
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethod(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<InvokeActionMethodFilterAsynchronouslyRecursive>b__3d()
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<>c__DisplayClass46.<InvokeActionMethodFilterAsynchronouslyRecursive>b__3f()
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass33.<BeginInvokeActionMethodWithFilters>b__32(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.CallEndDelegate(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResultBase`1.End()
+   at System.Web.Mvc.Async.AsyncResultWrapper.End[TResult](IAsyncResult asyncResult, Object tag)
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethodWithFilters(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<>c__DisplayClass2b.<BeginInvokeAction>b__1c()
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<BeginInvokeAction>b__1e(IAsyncResult asyncResult)
+2014-11-26 07:27:52,075 [19] DEBUG TEKenable.NHIS.Services.SecurityService - MyService constructor
+2014-11-26 07:27:52,153 [19] DEBUG TEKenable.NHIS.Services.SecurityService - MyService constructor
+2014-11-26 07:27:52,277 [19] ERROR TEKenable.NHIS.Web.Infrastructure.CustomHandleErrorAttribute - The provided anti-forgery token was meant for user "", but the current user is "sandor".
+System.Web.Mvc.HttpAntiForgeryException (0x80004005): The provided anti-forgery token was meant for user "", but the current user is "sandor".
+   at System.Web.Helpers.AntiXsrf.TokenValidator.ValidateTokens(HttpContextBase httpContext, IIdentity identity, AntiForgeryToken sessionToken, AntiForgeryToken fieldToken)
+   at System.Web.Helpers.AntiXsrf.AntiForgeryWorker.Validate(HttpContextBase httpContext)
+   at System.Web.Helpers.AntiForgery.Validate()
+   at System.Web.Mvc.ValidateAntiForgeryTokenAttribute.OnAuthorization(AuthorizationContext filterContext)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeAuthorizationFilters(ControllerContext controllerContext, IList`1 filters, ActionDescriptor actionDescriptor)
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<BeginInvokeAction>b__19(AsyncCallback asyncCallback, Object asyncState)
+2014-11-26 07:43:24,189 [67] DEBUG TEKenable.NHIS.Services.SecurityService - MyService constructor
+2014-11-26 07:43:24,206 [67] DEBUG TEKenable.NHIS.Services.SecurityService - MyService constructor
+2014-11-26 07:43:24,236 [67] ERROR TEKenable.NHIS.Web.Infrastructure.CustomHandleErrorAttribute - The provided anti-forgery token was meant for user "", but the current user is "sandor".
+System.Web.Mvc.HttpAntiForgeryException (0x80004005): The provided anti-forgery token was meant for user "", but the current user is "sandor".
+   at System.Web.Helpers.AntiXsrf.TokenValidator.ValidateTokens(HttpContextBase httpContext, IIdentity identity, AntiForgeryToken sessionToken, AntiForgeryToken fieldToken)
+   at System.Web.Helpers.AntiXsrf.AntiForgeryWorker.Validate(HttpContextBase httpContext)
+   at System.Web.Helpers.AntiForgery.Validate()
+   at System.Web.Mvc.ValidateAntiForgeryTokenAttribute.OnAuthorization(AuthorizationContext filterContext)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeAuthorizationFilters(ControllerContext controllerContext, IList`1 filters, ActionDescriptor actionDescriptor)
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<BeginInvokeAction>b__19(AsyncCallback asyncCallback, Object asyncState)
+2014-11-26 07:43:28,347 [67] DEBUG TEKenable.NHIS.Services.SecurityService - MyService constructor
+2014-11-26 07:43:28,357 [67] DEBUG TEKenable.NHIS.Services.AdminService - Admin constructor
+2014-11-26 07:43:28,361 [67] DEBUG TEKenable.NHIS.Web.Controllers.AdminController - Admin Controller initialized
+2014-11-26 07:43:28,379 [74] DEBUG TEKenable.NHIS.Services.SecurityService - MyService constructor
+2014-11-26 07:43:31,388 [69] DEBUG TEKenable.NHIS.Services.SecurityService - MyService constructor
+2014-11-26 07:43:31,394 [69] DEBUG TEKenable.NHIS.Services.SecurityService - MyService constructor
+2014-11-26 07:43:31,404 [78] DEBUG TEKenable.NHIS.Web.Controllers.HomeController - Home Controller initialized
+2014-11-26 07:43:31,413 [82] DEBUG TEKenable.NHIS.Services.SecurityService - MyService constructor
+2014-11-26 07:43:32,935 [70] DEBUG TEKenable.NHIS.Services.SecurityService - MyService constructor
+2014-11-26 07:43:33,013 [78] DEBUG TEKenable.NHIS.Services.SecurityService - MyService constructor
+2014-11-26 07:43:33,060 [78] DEBUG TEKenable.NHIS.Web.Controllers.HomeController - Home Controller initialized
+2014-11-26 07:43:36,435 [72] DEBUG TEKenable.NHIS.Services.SecurityService - MyService constructor
+2014-11-26 07:43:36,442 [72] DEBUG TEKenable.NHIS.Services.AdminService - Admin constructor
+2014-11-26 07:43:36,445 [72] DEBUG TEKenable.NHIS.Web.Controllers.AdminController - Admin Controller initialized
+2014-11-26 07:43:36,452 [74] DEBUG TEKenable.NHIS.Services.SecurityService - MyService constructor
+2014-11-26 07:49:21,776 [103] DEBUG TEKenable.NHIS.Services.SecurityService - MyService constructor
+2014-11-26 07:49:21,812 [103] DEBUG TEKenable.NHIS.Services.AdminService - Admin constructor
+2014-11-26 07:49:21,815 [103] DEBUG TEKenable.NHIS.Web.Controllers.AdminController - Admin Controller initialized
+2014-11-26 07:49:21,823 [92] DEBUG TEKenable.NHIS.Services.SecurityService - MyService constructor
+2014-11-26 07:49:23,494 [87] DEBUG TEKenable.NHIS.Services.SecurityService - MyService constructor
+2014-11-26 07:49:23,506 [87] DEBUG TEKenable.NHIS.Services.AdminService - Admin constructor
+2014-11-26 07:49:23,509 [87] DEBUG TEKenable.NHIS.Web.Controllers.AdminController - Admin Controller initialized
+2014-11-26 07:49:23,517 [90] DEBUG TEKenable.NHIS.Services.SecurityService - MyService constructor
+2014-11-26 12:50:15,845 [1] INFO ASP.global_asax - Application_Start executed
+2014-11-26 12:50:16,094 [6] DEBUG TEKenable.NHIS.Services.SecurityService - MyService constructor
+2014-11-26 12:50:16,094 [11] DEBUG TEKenable.NHIS.Services.SecurityService - MyService constructor
+2014-11-26 12:50:22,956 [6] ERROR ASP.global_asax - Application_Error
+System.Web.HttpException (0x80004005): Path '/Views/ControlTypeDemo/AutocompliteSimple.cshtml' was not found.
+   at System.Web.HttpNotFoundHandler.ProcessRequest(HttpContext context)
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2014-11-26 12:50:57,581 [6] DEBUG TEKenable.NHIS.Services.SecurityService - MyService constructor
+2014-11-26 12:51:00,910 [6] DEBUG TEKenable.NHIS.Services.SecurityService - MyService constructor
+2014-11-26 12:51:46,857 [6] DEBUG TEKenable.NHIS.Services.SecurityService - MyService constructor
+2014-11-26 12:51:50,048 [6] DEBUG TEKenable.NHIS.Services.SecurityService - MyService constructor
+2014-11-26 12:52:24,069 [13] DEBUG TEKenable.NHIS.Services.SecurityService - MyService constructor
+2014-11-26 12:53:20,135 [12] DEBUG TEKenable.NHIS.Services.SecurityService - MyService constructor
+2014-11-26 12:53:23,079 [25] DEBUG TEKenable.NHIS.Services.SecurityService - MyService constructor
+2014-11-26 12:53:31,139 [11] DEBUG TEKenable.NHIS.Services.SecurityService - MyService constructor
+2014-11-26 12:53:31,704 [15] DEBUG TEKenable.NHIS.Services.SecurityService - MyService constructor
+2014-11-26 12:53:33,475 [6] DEBUG TEKenable.NHIS.Services.SecurityService - MyService constructor
+2014-11-26 12:53:38,414 [11] DEBUG TEKenable.NHIS.Services.SecurityService - MyService constructor
+2014-11-26 12:53:43,049 [25] DEBUG TEKenable.NHIS.Services.SecurityService - MyService constructor
+2014-11-26 12:53:47,382 [6] DEBUG TEKenable.NHIS.Services.SecurityService - MyService constructor
+2014-11-26 12:53:51,595 [6] DEBUG TEKenable.NHIS.Services.SecurityService - MyService constructor
+2014-11-26 12:53:51,885 [14] DEBUG TEKenable.NHIS.Services.SecurityService - MyService constructor
+2014-11-26 12:53:53,619 [6] DEBUG TEKenable.NHIS.Services.SecurityService - MyService constructor
+2014-11-26 12:53:54,019 [14] DEBUG TEKenable.NHIS.Services.SecurityService - MyService constructor
+2014-11-26 12:53:55,173 [6] DEBUG TEKenable.NHIS.Services.SecurityService - MyService constructor
+2014-11-26 12:53:55,485 [15] DEBUG TEKenable.NHIS.Services.SecurityService - MyService constructor
+2014-11-26 12:53:59,742 [6] DEBUG TEKenable.NHIS.Services.SecurityService - MyService constructor
+2014-11-26 12:54:02,773 [6] DEBUG TEKenable.NHIS.Services.SecurityService - MyService constructor
+2014-11-26 12:54:05,252 [6] DEBUG TEKenable.NHIS.Services.SecurityService - MyService constructor
+2014-12-16 07:35:40,038 [1] INFO ASP.global_asax - Application_Start executed
+2014-12-16 07:35:59,629 [5] DEBUG TEKenable.NHIS.Services.SecurityService - MyService constructor
+2014-12-16 07:36:09,978 [5] ERROR ASP.global_asax - Application_Error
+System.Web.HttpException (0x80004005): Path '/Views/Shared/Error.cshtml' was not found.
+   at System.Web.HttpNotFoundHandler.ProcessRequest(HttpContext context)
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2014-12-16 07:37:20,276 [9] DEBUG TEKenable.NHIS.Services.SecurityService - MyService constructor
+2014-12-16 07:37:20,540 [9] DEBUG TEKenable.NHIS.Web.Controllers.HomeController - Home Controller initialized
+2014-12-16 07:37:28,041 [6] DEBUG TEKenable.NHIS.Services.SecurityService - MyService constructor
+2014-12-16 07:37:28,072 [6] DEBUG TEKenable.NHIS.Services.AdminService - Admin constructor
+2014-12-16 07:37:28,080 [6] DEBUG TEKenable.NHIS.Web.Controllers.AdminController - Admin Controller initialized
+2014-12-16 07:37:28,345 [6] ERROR TEKenable.NHIS.Web.Infrastructure.CustomHandleErrorAttribute - Object reference not set to an instance of an object.
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at TEKenable.NHIS.Web.Infrastructure.AppIdentity.IsRoleExists(String rolename) in d:\Projects\NHIS\BitBucket\hrb\NHIS\TEKenable.NHIS.Web\Infrastructure\AppPrincipal.cs:line 74
+   at TEKenable.NHIS.Web.Infrastructure.AppPrincipal.IsInRole(String role) in d:\Projects\NHIS\BitBucket\hrb\NHIS\TEKenable.NHIS.Web\Infrastructure\AppPrincipal.cs:line 28
+   at System.Linq.Enumerable.Any[TSource](IEnumerable`1 source, Func`2 predicate)
+   at System.Web.Mvc.AuthorizeAttribute.AuthorizeCore(HttpContextBase httpContext)
+   at System.Web.Mvc.AuthorizeAttribute.OnAuthorization(AuthorizationContext filterContext)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeAuthorizationFilters(ControllerContext controllerContext, IList`1 filters, ActionDescriptor actionDescriptor)
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<BeginInvokeAction>b__19(AsyncCallback asyncCallback, Object asyncState)
+2014-12-16 08:22:56,435 [1] ERROR ASP.global_asax - Application_Error
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at TEKenable.ProjectTemplate.Services.Log4NetManager.GetEntitiyConnectionStringFromWebConfig() in d:\Projects\ProjectTemplate\Code\TEKenable.ProjectTemplate.Services\Log4NetManager.cs:line 56
+   at TEKenable.ProjectTemplate.Services.Log4NetManager.InitializeLog4Net() in d:\Projects\ProjectTemplate\Code\TEKenable.ProjectTemplate.Services\Log4NetManager.cs:line 45
+   at TEKenable.ProjectTemplate.Web.MvcApplication.Application_Start() in d:\Projects\ProjectTemplate\Code\TEKenable.ProjectTemplate.Web\Global.asax.cs:line 29
+2014-12-16 08:23:47,712 [1] ERROR ASP.global_asax - Application_Error
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at TEKenable.ProjectTemplate.Services.Log4NetManager.GetEntitiyConnectionStringFromWebConfig() in d:\Projects\ProjectTemplate\Code\TEKenable.ProjectTemplate.Services\Log4NetManager.cs:line 56
+   at TEKenable.ProjectTemplate.Services.Log4NetManager.InitializeLog4Net() in d:\Projects\ProjectTemplate\Code\TEKenable.ProjectTemplate.Services\Log4NetManager.cs:line 45
+   at TEKenable.ProjectTemplate.Web.MvcApplication.Application_Start() in d:\Projects\ProjectTemplate\Code\TEKenable.ProjectTemplate.Web\Global.asax.cs:line 29
+2014-12-16 08:26:55,241 [1] ERROR ASP.global_asax - Application_Error
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at TEKenable.ProjectTemplate.Services.Log4NetManager.GetEntitiyConnectionStringFromWebConfig() in d:\Projects\ProjectTemplate\Code\TEKenable.ProjectTemplate.Services\Log4NetManager.cs:line 56
+   at TEKenable.ProjectTemplate.Services.Log4NetManager.InitializeLog4Net() in d:\Projects\ProjectTemplate\Code\TEKenable.ProjectTemplate.Services\Log4NetManager.cs:line 45
+   at TEKenable.ProjectTemplate.Web.MvcApplication.Application_Start() in d:\Projects\ProjectTemplate\Code\TEKenable.ProjectTemplate.Web\Global.asax.cs:line 29
+2014-12-16 08:26:56,115 [7] ERROR ASP.global_asax - Application_Error
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at TEKenable.ProjectTemplate.Web.Infrastructure.AppIdentity..ctor(IIdentity identity) in d:\Projects\ProjectTemplate\Code\TEKenable.ProjectTemplate.Web\Infrastructure\AppPrincipal.cs:line 116
+   at TEKenable.ProjectTemplate.Web.MvcApplication.Application_PostAuthenticateRequest(Object sender, EventArgs e) in d:\Projects\ProjectTemplate\Code\TEKenable.ProjectTemplate.Web\Global.asax.cs:line 48
+   at System.Web.HttpApplication.SyncEventExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2014-12-16 08:26:56,988 [7] ERROR ASP.global_asax - Application_Error
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at TEKenable.ProjectTemplate.Web.Infrastructure.AppIdentity..ctor(IIdentity identity) in d:\Projects\ProjectTemplate\Code\TEKenable.ProjectTemplate.Web\Infrastructure\AppPrincipal.cs:line 116
+   at TEKenable.ProjectTemplate.Web.MvcApplication.Application_PostAuthenticateRequest(Object sender, EventArgs e) in d:\Projects\ProjectTemplate\Code\TEKenable.ProjectTemplate.Web\Global.asax.cs:line 48
+   at System.Web.HttpApplication.SyncEventExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2014-12-16 08:27:41,636 [6] ERROR ASP.global_asax - Application_Error
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at TEKenable.ProjectTemplate.Web.Infrastructure.AppIdentity..ctor(IIdentity identity) in d:\Projects\ProjectTemplate\Code\TEKenable.ProjectTemplate.Web\Infrastructure\AppPrincipal.cs:line 116
+   at TEKenable.ProjectTemplate.Web.MvcApplication.Application_PostAuthenticateRequest(Object sender, EventArgs e) in d:\Projects\ProjectTemplate\Code\TEKenable.ProjectTemplate.Web\Global.asax.cs:line 48
+   at System.Web.HttpApplication.SyncEventExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2014-12-16 08:28:33,255 [6] ERROR ASP.global_asax - Application_Error
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at TEKenable.ProjectTemplate.Web.Infrastructure.AppIdentity..ctor(IIdentity identity) in d:\Projects\ProjectTemplate\Code\TEKenable.ProjectTemplate.Web\Infrastructure\AppPrincipal.cs:line 116
+   at TEKenable.ProjectTemplate.Web.MvcApplication.Application_PostAuthenticateRequest(Object sender, EventArgs e) in d:\Projects\ProjectTemplate\Code\TEKenable.ProjectTemplate.Web\Global.asax.cs:line 48
+   at System.Web.HttpApplication.SyncEventExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2014-12-16 08:32:50,257 [1] ERROR ASP.global_asax - Application_Error
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at TEKenable.ProjectTemplate.Services.Log4NetManager.GetEntitiyConnectionStringFromWebConfig() in d:\Projects\ProjectTemplate\Code\TEKenable.ProjectTemplate.Services\Log4NetManager.cs:line 56
+   at TEKenable.ProjectTemplate.Services.Log4NetManager.InitializeLog4Net() in d:\Projects\ProjectTemplate\Code\TEKenable.ProjectTemplate.Services\Log4NetManager.cs:line 45
+   at TEKenable.ProjectTemplate.Web.MvcApplication.Application_Start() in d:\Projects\ProjectTemplate\Code\TEKenable.ProjectTemplate.Web\Global.asax.cs:line 29
+2014-12-16 08:33:01,382 [5] ERROR ASP.global_asax - Application_Error
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at TEKenable.ProjectTemplate.Web.Infrastructure.AppIdentity..ctor(IIdentity identity) in d:\Projects\ProjectTemplate\Code\TEKenable.ProjectTemplate.Web\Infrastructure\AppPrincipal.cs:line 116
+   at TEKenable.ProjectTemplate.Web.MvcApplication.Application_PostAuthenticateRequest(Object sender, EventArgs e) in d:\Projects\ProjectTemplate\Code\TEKenable.ProjectTemplate.Web\Global.asax.cs:line 48
+   at System.Web.HttpApplication.SyncEventExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2014-12-16 08:35:51,658 [5] ERROR ASP.global_asax - Application_Error
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at TEKenable.ProjectTemplate.Web.Infrastructure.AppIdentity..ctor(IIdentity identity) in d:\Projects\ProjectTemplate\Code\TEKenable.ProjectTemplate.Web\Infrastructure\AppPrincipal.cs:line 116
+   at TEKenable.ProjectTemplate.Web.MvcApplication.Application_PostAuthenticateRequest(Object sender, EventArgs e) in d:\Projects\ProjectTemplate\Code\TEKenable.ProjectTemplate.Web\Global.asax.cs:line 48
+   at System.Web.HttpApplication.SyncEventExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2014-12-16 08:36:34,567 [1] ERROR ASP.global_asax - Application_Error
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at TEKenable.ProjectTemplate.Services.Log4NetManager.GetEntitiyConnectionStringFromWebConfig() in d:\Projects\ProjectTemplate\Code\TEKenable.ProjectTemplate.Services\Log4NetManager.cs:line 56
+   at TEKenable.ProjectTemplate.Services.Log4NetManager.InitializeLog4Net() in d:\Projects\ProjectTemplate\Code\TEKenable.ProjectTemplate.Services\Log4NetManager.cs:line 45
+   at TEKenable.ProjectTemplate.Web.MvcApplication.Application_Start() in d:\Projects\ProjectTemplate\Code\TEKenable.ProjectTemplate.Web\Global.asax.cs:line 29
+2014-12-16 08:42:44,417 [1] ERROR ASP.global_asax - Application_Error
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at TEKenable.ProjectTemplate.Services.Log4NetManager.GetEntitiyConnectionStringFromWebConfig() in d:\Projects\ProjectTemplate\Code\TEKenable.ProjectTemplate.Services\Log4NetManager.cs:line 56
+   at TEKenable.ProjectTemplate.Services.Log4NetManager.InitializeLog4Net() in d:\Projects\ProjectTemplate\Code\TEKenable.ProjectTemplate.Services\Log4NetManager.cs:line 45
+   at TEKenable.ProjectTemplate.Web.MvcApplication.Application_Start() in d:\Projects\ProjectTemplate\Code\TEKenable.ProjectTemplate.Web\Global.asax.cs:line 29
+2014-12-16 08:45:17,222 [1] ERROR ASP.global_asax - Application_Error
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at TEKenable.ProjectTemplate.Services.Log4NetManager.GetEntitiyConnectionStringFromWebConfig() in d:\Projects\ProjectTemplate\Code\TEKenable.ProjectTemplate.Services\Log4NetManager.cs:line 56
+   at TEKenable.ProjectTemplate.Services.Log4NetManager.InitializeLog4Net() in d:\Projects\ProjectTemplate\Code\TEKenable.ProjectTemplate.Services\Log4NetManager.cs:line 45
+   at TEKenable.ProjectTemplate.Web.MvcApplication.Application_Start() in d:\Projects\ProjectTemplate\Code\TEKenable.ProjectTemplate.Web\Global.asax.cs:line 29
+2014-12-16 08:51:18,760 [1] ERROR ASP.global_asax - Application_Error
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at TEKenable.ProjectTemplate.Services.Log4NetManager.GetEntitiyConnectionStringFromWebConfig() in d:\Projects\ProjectTemplate\Code\TEKenable.ProjectTemplate.Services\Log4NetManager.cs:line 56
+   at TEKenable.ProjectTemplate.Services.Log4NetManager.InitializeLog4Net() in d:\Projects\ProjectTemplate\Code\TEKenable.ProjectTemplate.Services\Log4NetManager.cs:line 45
+   at TEKenable.ProjectTemplate.Web.MvcApplication.Application_Start() in d:\Projects\ProjectTemplate\Code\TEKenable.ProjectTemplate.Web\Global.asax.cs:line 29
+2014-12-16 08:52:47,347 [1] INFO ASP.global_asax - Application_Start executed
+2014-12-16 08:52:47,712 [19] DEBUG TEKenable.ProjectTemplate.Web.Controllers.HomeController - Home Controller initialized
+2014-12-16 08:52:48,248 [22] DEBUG TEKenable.ProjectTemplate.Services.SecurityService - MyService constructor
+2014-12-16 09:44:05,409 [18] DEBUG TEKenable.ProjectTemplate.Web.Controllers.HomeController - Home Controller initialized
+2014-12-16 09:45:14,878 [41] DEBUG TEKenable.ProjectTemplate.Services.SecurityService - MyService constructor
+2014-12-16 09:47:37,843 [1] INFO ASP.global_asax - Application_Start executed
+2014-12-16 09:47:41,482 [18] DEBUG TEKenable.ProjectTemplate.Web.Controllers.HomeController - Home Controller initialized
+2014-12-16 09:47:42,037 [62] DEBUG TEKenable.ProjectTemplate.Services.SecurityService - MyService constructor
+2014-12-16 09:51:38,605 [68] DEBUG TEKenable.ProjectTemplate.Services.SecurityService - MyService constructor
+2014-12-16 09:54:00,022 [32] DEBUG TEKenable.ProjectTemplate.Services.SecurityService - MyService constructor
+2014-12-16 09:54:13,228 [32] DEBUG TEKenable.ProjectTemplate.Web.Controllers.HomeController - Home Controller initialized
+2014-12-16 09:55:52,470 [32] DEBUG TEKenable.ProjectTemplate.Services.SecurityService - MyService constructor
+2014-12-16 09:55:52,493 [32] DEBUG TEKenable.ProjectTemplate.Services.SecurityService - MyService constructor
+2014-12-16 09:55:52,556 [62] DEBUG TEKenable.ProjectTemplate.Web.Controllers.HomeController - Home Controller initialized
+2014-12-16 09:55:52,578 [61] DEBUG TEKenable.ProjectTemplate.Services.SecurityService - MyService constructor
+2014-12-16 09:55:56,747 [32] DEBUG TEKenable.ProjectTemplate.Web.Controllers.HomeController - Home Controller initialized
+2014-12-16 09:55:56,769 [68] DEBUG TEKenable.ProjectTemplate.Services.SecurityService - MyService constructor
+2014-12-16 09:56:27,881 [32] DEBUG TEKenable.ProjectTemplate.Services.SecurityService - MyService constructor
+2014-12-16 09:58:00,626 [55] DEBUG TEKenable.ProjectTemplate.Services.AdminService - Admin constructor
+2014-12-16 09:58:00,632 [55] DEBUG TEKenable.ProjectTemplate.Web.Controllers.AdminController - Admin Controller initialized
+2014-12-16 09:58:00,671 [46] DEBUG TEKenable.ProjectTemplate.Services.SecurityService - MyService constructor
+2014-12-16 09:58:06,086 [52] DEBUG TEKenable.ProjectTemplate.Services.SecurityService - MyService constructor
+2014-12-16 09:58:10,131 [61] DEBUG TEKenable.ProjectTemplate.Services.SecurityService - MyService constructor
+2014-12-16 10:02:35,513 [43] INFO ASP.global_asax - Application_Start executed
+2014-12-16 10:02:35,943 [68] DEBUG TEKenable.ProjectTemplate.Web.Controllers.HomeController - Home Controller initialized
+2014-12-16 10:02:36,585 [53] DEBUG TEKenable.ProjectTemplate.Services.SecurityService - MyService constructor
+2014-12-16 10:03:06,552 [8] DEBUG TEKenable.ProjectTemplate.Services.SecurityService - MyService constructor
+2014-12-16 10:04:40,367 [43] INFO ASP.global_asax - Application_Start executed
+2014-12-16 10:04:41,246 [68] DEBUG TEKenable.ProjectTemplate.Web.Controllers.HomeController - Home Controller initialized
+2014-12-16 10:04:45,657 [8] DEBUG TEKenable.ProjectTemplate.Services.SecurityService - MyService constructor
+2014-12-16 10:10:51,239 [55] DEBUG TEKenable.ProjectTemplate.Web.Controllers.HomeController - Home Controller initialized
+2014-12-16 10:10:51,907 [37] DEBUG TEKenable.ProjectTemplate.Services.SecurityService - MyService constructor
+2014-12-16 10:11:03,699 [55] DEBUG TEKenable.ProjectTemplate.Services.SecurityService - MyService constructor
+2014-12-16 10:11:13,955 [37] DEBUG TEKenable.ProjectTemplate.Services.SecurityService - MyService constructor
+2014-12-16 10:15:06,399 [43] INFO ASP.global_asax - Application_Start executed
+2014-12-16 10:15:06,877 [37] DEBUG TEKenable.ProjectTemplate.Web.Controllers.HomeController - Home Controller initialized
+2014-12-16 10:15:07,121 [46] DEBUG TEKenable.ProjectTemplate.Web.Controllers.HomeController - Home Controller initialized
+2014-12-16 10:15:07,543 [34] DEBUG TEKenable.ProjectTemplate.Services.SecurityService - MyService constructor
+2014-12-16 10:15:20,256 [46] DEBUG TEKenable.ProjectTemplate.Services.SecurityService - MyService constructor
+2014-12-16 10:15:52,862 [31] DEBUG TEKenable.ProjectTemplate.Services.SecurityService - MyService constructor
+2014-12-16 10:16:32,688 [46] DEBUG TEKenable.ProjectTemplate.Web.Controllers.HomeController - Home Controller initialized
+2014-12-16 10:16:39,172 [58] DEBUG TEKenable.ProjectTemplate.Services.SecurityService - MyService constructor
+2014-12-16 10:17:09,896 [34] DEBUG TEKenable.ProjectTemplate.Services.SecurityService - MyService constructor
+2014-12-16 10:20:10,730 [43] INFO ASP.global_asax - Application_Start executed
+2014-12-16 10:20:11,619 [46] DEBUG TEKenable.ProjectTemplate.Web.Controllers.HomeController - Home Controller initialized
+2014-12-16 10:20:12,602 [58] DEBUG TEKenable.ProjectTemplate.Services.SecurityService - MyService constructor
+2014-12-16 10:20:26,672 [46] DEBUG TEKenable.ProjectTemplate.Services.SecurityService - MyService constructor
+2014-12-16 10:20:39,100 [46] DEBUG TEKenable.ProjectTemplate.Services.SecurityService - MyService constructor
+2014-12-16 10:21:13,440 [56] DEBUG TEKenable.ProjectTemplate.Web.Controllers.HomeController - Home Controller initialized
+2014-12-16 10:21:14,054 [46] DEBUG TEKenable.ProjectTemplate.Services.SecurityService - MyService constructor
+2014-12-16 10:21:21,105 [33] DEBUG TEKenable.ProjectTemplate.Services.SecurityService - MyService constructor
+2014-12-16 10:21:22,809 [33] ERROR TEKenable.ProjectTemplate.Web.Infrastructure.CustomHandleErrorAttribute - The underlying provider failed on Open.
+System.Data.Entity.Core.EntityException: The underlying provider failed on Open. ---> System.Data.SqlClient.SqlException: Cannot open database "ProjectTemplate" requested by the login. The login failed.
+Login failed for user 'sa'.
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.TdsParser.Run(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj)
+   at System.Data.SqlClient.SqlInternalConnectionTds.CompleteLogin(Boolean enlistOK)
+   at System.Data.SqlClient.SqlInternalConnectionTds.AttemptOneLogin(ServerInfo serverInfo, String newPassword, SecureString newSecurePassword, Boolean ignoreSniOpenTimeout, TimeoutTimer timeout, Boolean withFailover)
+   at System.Data.SqlClient.SqlInternalConnectionTds.LoginNoFailover(ServerInfo serverInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString connectionOptions, SqlCredential credential, TimeoutTimer timeout)
+   at System.Data.SqlClient.SqlInternalConnectionTds.OpenLoginEnlist(TimeoutTimer timeout, SqlConnectionString connectionOptions, SqlCredential credential, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance)
+   at System.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData)
+   at System.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at System.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.SqlClient.SqlConnection.TryOpenInner(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.Open()
+   at System.Data.Entity.Infrastructure.Interception.DbConnectionDispatcher.<Open>b__36(DbConnection t, DbConnectionInterceptionContext c)
+   at System.Data.Entity.Infrastructure.Interception.InternalDispatcher`1.Dispatch[TTarget,TInterceptionContext](TTarget target, Action`2 operation, TInterceptionContext interceptionContext, Action`3 executing, Action`3 executed)
+   at System.Data.Entity.Infrastructure.Interception.DbConnectionDispatcher.Open(DbConnection connection, DbInterceptionContext interceptionContext)
+   at System.Data.Entity.Core.EntityClient.EntityConnection.<Open>b__2()
+   at System.Data.Entity.SqlServer.DefaultSqlExecutionStrategy.<>c__DisplayClass1.<Execute>b__0()
+   at System.Data.Entity.SqlServer.DefaultSqlExecutionStrategy.Execute[TResult](Func`1 operation)
+   at System.Data.Entity.SqlServer.DefaultSqlExecutionStrategy.Execute(Action operation)
+   at System.Data.Entity.Core.EntityClient.EntityConnection.Open()
+   --- End of inner exception stack trace ---
+   at System.Data.Entity.Core.EntityClient.EntityConnection.Open()
+   at System.Data.Entity.Core.Objects.ObjectContext.EnsureConnection(Boolean shouldMonitorTransactions)
+   at System.Data.Entity.Core.Objects.ObjectContext.ExecuteInTransaction[T](Func`1 func, IDbExecutionStrategy executionStrategy, Boolean startLocalTransaction, Boolean releaseConnectionOnSuccess)
+   at System.Data.Entity.Core.Objects.ObjectQuery`1.<>c__DisplayClass7.<GetResults>b__5()
+   at System.Data.Entity.SqlServer.DefaultSqlExecutionStrategy.Execute[TResult](Func`1 operation)
+   at System.Data.Entity.Core.Objects.ObjectQuery`1.GetResults(Nullable`1 forMergeOption)
+   at System.Data.Entity.Core.Objects.ObjectQuery`1.<System.Collections.Generic.IEnumerable<T>.GetEnumerator>b__0()
+   at System.Data.Entity.Internal.LazyEnumerator`1.MoveNext()
+   at System.Linq.Enumerable.FirstOrDefault[TSource](IEnumerable`1 source)
+   at System.Data.Entity.Core.Objects.ELinq.ObjectQueryProvider.<GetElementFunction>b__1[TResult](IEnumerable`1 sequence)
+   at System.Data.Entity.Core.Objects.ELinq.ObjectQueryProvider.ExecuteSingle[TResult](IEnumerable`1 query, Expression queryRoot)
+   at System.Data.Entity.Core.Objects.ELinq.ObjectQueryProvider.System.Linq.IQueryProvider.Execute[TResult](Expression expression)
+   at System.Data.Entity.Internal.Linq.DbQueryProvider.Execute[TResult](Expression expression)
+   at System.Linq.Queryable.FirstOrDefault[TSource](IQueryable`1 source)
+   at TEKenable.ProjectTemplate.Services.SecurityService.ValidateUser(String username, String password) in d:\Projects\ProjectTemplate\Code\TEKenable.ProjectTemplate.Services\Services\SecurityService.cs:line 35
+   at TEKenable.ProjectTemplate.Web.Controllers.AccountController.Login(LoginModel model, String returnUrl) in d:\Projects\ProjectTemplate\Code\TEKenable.ProjectTemplate.Web\Controllers\AccountController.cs:line 46
+   at lambda_method(Closure , ControllerBase , Object[] )
+   at System.Web.Mvc.ActionMethodDispatcher.Execute(ControllerBase controller, Object[] parameters)
+   at System.Web.Mvc.ReflectedActionDescriptor.Execute(ControllerContext controllerContext, IDictionary`2 parameters)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethod(ControllerContext controllerContext, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.ActionInvocation.InvokeSynchronousActionMethod()
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.<BeginInvokeSynchronousActionMethod>b__39(IAsyncResult asyncResult, ActionInvocation innerInvokeState)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`2.CallEndDelegate(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResultBase`1.End()
+   at System.Web.Mvc.Async.AsyncResultWrapper.End[TResult](IAsyncResult asyncResult, Object tag)
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethod(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<InvokeActionMethodFilterAsynchronouslyRecursive>b__3d()
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<>c__DisplayClass46.<InvokeActionMethodFilterAsynchronouslyRecursive>b__3f()
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass33.<BeginInvokeActionMethodWithFilters>b__32(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.CallEndDelegate(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResultBase`1.End()
+   at System.Web.Mvc.Async.AsyncResultWrapper.End[TResult](IAsyncResult asyncResult, Object tag)
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethodWithFilters(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<>c__DisplayClass2b.<BeginInvokeAction>b__1c()
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<BeginInvokeAction>b__1e(IAsyncResult asyncResult)
+2014-12-16 10:22:33,361 [46] DEBUG TEKenable.ProjectTemplate.Web.Controllers.HomeController - Home Controller initialized
+2014-12-16 10:22:33,397 [46] DEBUG TEKenable.ProjectTemplate.Services.SecurityService - MyService constructor
+2014-12-16 10:30:50,360 [1] INFO ASP.global_asax - Application_Start executed
+2014-12-16 10:30:51,287 [10] DEBUG TEKenable.ProjectTemplate.Web.Controllers.HomeController - Home Controller initialized
+2014-12-16 10:30:52,053 [11] DEBUG TEKenable.ProjectTemplate.Services.SecurityService - MyService constructor
+2014-12-16 10:37:11,155 [19] DEBUG TEKenable.ProjectTemplate.Services.SecurityService - MyService constructor
+2014-12-16 10:42:12,504 [1] INFO ASP.global_asax - Application_Start executed
+2014-12-16 10:42:13,562 [16] DEBUG TEKenable.ProjectTemplate.Web.Controllers.HomeController - Home Controller initialized
+2014-12-16 10:42:14,605 [21] DEBUG TEKenable.ProjectTemplate.Services.SecurityService - MyService constructor
+2014-12-16 10:43:30,103 [21] DEBUG TEKenable.ProjectTemplate.Web.Controllers.HomeController - Home Controller initialized
+2014-12-16 10:43:30,802 [16] DEBUG TEKenable.ProjectTemplate.Services.SecurityService - MyService constructor
+2014-12-16 10:44:07,255 [16] DEBUG TEKenable.ProjectTemplate.Services.SecurityService - MyService constructor
+2014-12-16 10:45:38,256 [1] INFO ASP.global_asax - Application_Start executed
+2014-12-16 10:45:38,656 [16] DEBUG TEKenable.ProjectTemplate.Web.Controllers.HomeController - Home Controller initialized
+2014-12-16 10:45:47,868 [35] DEBUG TEKenable.ProjectTemplate.Services.SecurityService - MyService constructor
+2014-12-16 10:46:08,258 [21] DEBUG TEKenable.ProjectTemplate.Services.SecurityService - MyService constructor
+2014-12-16 10:54:45,389 [1] INFO ASP.global_asax - Application_Start executed
+2014-12-16 10:54:46,200 [35] DEBUG TEKenable.ProjectTemplate.Web.Controllers.HomeController - Home Controller initialized
+2014-12-16 10:54:50,916 [29] DEBUG TEKenable.ProjectTemplate.Services.SecurityService - MyService constructor
+2014-12-16 10:58:07,189 [1] INFO ASP.global_asax - Application_Start executed
+2014-12-16 10:58:08,148 [35] DEBUG TEKenable.ProjectTemplate.Web.Controllers.HomeController - Home Controller initialized
+2014-12-16 10:58:12,352 [31] DEBUG TEKenable.ProjectTemplate.Services.SecurityService - MyService constructor
+2014-12-16 10:58:37,580 [35] DEBUG TEKenable.ProjectTemplate.Services.SecurityService - MyService constructor
+2014-12-16 10:59:23,674 [35] DEBUG TEKenable.ProjectTemplate.Services.SecurityService - MyService constructor
+2014-12-16 10:59:27,568 [35] DEBUG TEKenable.ProjectTemplate.Services.SecurityService - MyService constructor
+2014-12-16 11:00:29,756 [35] DEBUG TEKenable.ProjectTemplate.Services.SecurityService - MyService constructor
+2014-12-16 11:02:04,958 [1] INFO ASP.global_asax - Application_Start executed
+2014-12-16 11:02:05,389 [35] DEBUG TEKenable.ProjectTemplate.Web.Controllers.HomeController - Home Controller initialized
+2014-12-16 11:02:05,615 [13] DEBUG TEKenable.ProjectTemplate.Web.Controllers.HomeController - Home Controller initialized
+2014-12-16 11:02:06,029 [28] DEBUG TEKenable.ProjectTemplate.Services.SecurityService - MyService constructor
+2014-12-16 11:02:10,950 [35] DEBUG TEKenable.ProjectTemplate.Services.SecurityService - MyService constructor
+2014-12-16 11:02:21,484 [35] DEBUG TEKenable.ProjectTemplate.Services.SecurityService - MyService constructor
+2014-12-16 11:05:31,067 [35] ERROR TEKenable.ProjectTemplate.Web.Infrastructure.CustomHandleErrorAttribute - The context cannot be used while the model is being created. This exception may be thrown if the context is used inside the OnModelCreating method or if the same context instance is accessed by multiple threads concurrently. Note that instance members of DbContext and related classes are not guaranteed to be thread safe.
+System.InvalidOperationException: The context cannot be used while the model is being created. This exception may be thrown if the context is used inside the OnModelCreating method or if the same context instance is accessed by multiple threads concurrently. Note that instance members of DbContext and related classes are not guaranteed to be thread safe.
+   at System.Data.Entity.Internal.LazyInternalContext.InitializeContext()
+   at System.Data.Entity.Internal.InternalContext.Initialize()
+   at System.Data.Entity.Internal.InternalContext.GetEntitySetAndBaseTypeForType(Type entityType)
+   at System.Data.Entity.Internal.Linq.InternalSet`1.Initialize()
+   at System.Data.Entity.Internal.Linq.InternalSet`1.get_InternalContext()
+   at System.Data.Entity.Infrastructure.DbQuery`1.System.Linq.IQueryable.get_Provider()
+   at System.Linq.Queryable.Where[TSource](IQueryable`1 source, Expression`1 predicate)
+   at TEKenable.ProjectTemplate.Services.SecurityService.ValidateUser(String username, String password) in d:\Projects\ProjectTemplate\Code\TEKenable.ProjectTemplate.Services\Services\SecurityService.cs:line 36
+   at TEKenable.ProjectTemplate.Web.Controllers.AccountController.Login(LoginModel model, String returnUrl) in d:\Projects\ProjectTemplate\Code\TEKenable.ProjectTemplate.Web\Controllers\AccountController.cs:line 46
+   at lambda_method(Closure , ControllerBase , Object[] )
+   at System.Web.Mvc.ActionMethodDispatcher.Execute(ControllerBase controller, Object[] parameters)
+   at System.Web.Mvc.ReflectedActionDescriptor.Execute(ControllerContext controllerContext, IDictionary`2 parameters)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethod(ControllerContext controllerContext, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.ActionInvocation.InvokeSynchronousActionMethod()
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.<BeginInvokeSynchronousActionMethod>b__39(IAsyncResult asyncResult, ActionInvocation innerInvokeState)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`2.CallEndDelegate(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResultBase`1.End()
+   at System.Web.Mvc.Async.AsyncResultWrapper.End[TResult](IAsyncResult asyncResult, Object tag)
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethod(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<InvokeActionMethodFilterAsynchronouslyRecursive>b__3d()
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<>c__DisplayClass46.<InvokeActionMethodFilterAsynchronouslyRecursive>b__3f()
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass33.<BeginInvokeActionMethodWithFilters>b__32(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.CallEndDelegate(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResultBase`1.End()
+   at System.Web.Mvc.Async.AsyncResultWrapper.End[TResult](IAsyncResult asyncResult, Object tag)
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethodWithFilters(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<>c__DisplayClass2b.<BeginInvokeAction>b__1c()
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<BeginInvokeAction>b__1e(IAsyncResult asyncResult)
+2014-12-16 11:05:39,232 [35] DEBUG TEKenable.ProjectTemplate.Web.Controllers.HomeController - Home Controller initialized
+2014-12-16 11:05:39,255 [19] DEBUG TEKenable.ProjectTemplate.Services.SecurityService - MyService constructor
+2014-12-16 11:05:54,069 [35] DEBUG TEKenable.ProjectTemplate.Services.SecurityService - MyService constructor
+2014-12-16 11:05:57,187 [35] ERROR TEKenable.ProjectTemplate.Web.Infrastructure.CustomHandleErrorAttribute - Object reference not set to an instance of an object.
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at System.Data.Entity.Internal.RetryLazy`2.GetValue(TInput input)
+   at System.Data.Entity.Internal.LazyInternalContext.InitializeContext()
+   at System.Data.Entity.Internal.InternalContext.Initialize()
+   at System.Data.Entity.Internal.InternalContext.GetEntitySetAndBaseTypeForType(Type entityType)
+   at System.Data.Entity.Internal.Linq.InternalSet`1.Initialize()
+   at System.Data.Entity.Internal.Linq.InternalSet`1.get_InternalContext()
+   at System.Data.Entity.Infrastructure.DbQuery`1.System.Linq.IQueryable.get_Provider()
+   at System.Linq.Queryable.Where[TSource](IQueryable`1 source, Expression`1 predicate)
+   at TEKenable.ProjectTemplate.Services.SecurityService.ValidateUser(String username, String password) in d:\Projects\ProjectTemplate\Code\TEKenable.ProjectTemplate.Services\Services\SecurityService.cs:line 36
+   at TEKenable.ProjectTemplate.Web.Controllers.AccountController.Login(LoginModel model, String returnUrl) in d:\Projects\ProjectTemplate\Code\TEKenable.ProjectTemplate.Web\Controllers\AccountController.cs:line 46
+   at lambda_method(Closure , ControllerBase , Object[] )
+   at System.Web.Mvc.ActionMethodDispatcher.Execute(ControllerBase controller, Object[] parameters)
+   at System.Web.Mvc.ReflectedActionDescriptor.Execute(ControllerContext controllerContext, IDictionary`2 parameters)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethod(ControllerContext controllerContext, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.ActionInvocation.InvokeSynchronousActionMethod()
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.<BeginInvokeSynchronousActionMethod>b__39(IAsyncResult asyncResult, ActionInvocation innerInvokeState)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`2.CallEndDelegate(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResultBase`1.End()
+   at System.Web.Mvc.Async.AsyncResultWrapper.End[TResult](IAsyncResult asyncResult, Object tag)
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethod(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<InvokeActionMethodFilterAsynchronouslyRecursive>b__3d()
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<>c__DisplayClass46.<InvokeActionMethodFilterAsynchronouslyRecursive>b__3f()
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass33.<BeginInvokeActionMethodWithFilters>b__32(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.CallEndDelegate(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResultBase`1.End()
+   at System.Web.Mvc.Async.AsyncResultWrapper.End[TResult](IAsyncResult asyncResult, Object tag)
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethodWithFilters(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<>c__DisplayClass2b.<BeginInvokeAction>b__1c()
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<BeginInvokeAction>b__1e(IAsyncResult asyncResult)
+2014-12-16 11:06:36,951 [35] DEBUG TEKenable.ProjectTemplate.Web.Controllers.HomeController - Home Controller initialized
+2014-12-16 11:06:36,977 [19] DEBUG TEKenable.ProjectTemplate.Services.SecurityService - MyService constructor
+2014-12-16 11:06:40,433 [31] DEBUG TEKenable.ProjectTemplate.Services.SecurityService - MyService constructor
+2014-12-16 11:08:09,246 [34] DEBUG TEKenable.ProjectTemplate.Web.Controllers.HomeController - Home Controller initialized
+2014-12-16 11:08:09,273 [36] DEBUG TEKenable.ProjectTemplate.Services.SecurityService - MyService constructor
+2014-12-16 11:08:14,353 [18] DEBUG TEKenable.ProjectTemplate.Services.SecurityService - MyService constructor
+2014-12-16 11:09:42,669 [1] INFO ASP.global_asax - Application_Start executed
+2014-12-16 11:09:43,582 [6] DEBUG TEKenable.ProjectTemplate.Web.Controllers.HomeController - Home Controller initialized
+2014-12-16 11:09:44,539 [8] DEBUG TEKenable.ProjectTemplate.Services.SecurityService - MyService constructor
+2014-12-16 11:10:12,836 [6] DEBUG TEKenable.ProjectTemplate.Services.SecurityService - MyService constructor
+2014-12-16 11:10:29,445 [6] DEBUG TEKenable.ProjectTemplate.Services.SecurityService - MyService constructor
+2014-12-16 11:10:38,852 [6] DEBUG TEKenable.ProjectTemplate.Services.SecurityService - MyService constructor
+2014-12-16 11:12:07,775 [6] DEBUG TEKenable.ProjectTemplate.Services.SecurityService - MyService constructor
+2014-12-16 11:12:15,901 [6] DEBUG TEKenable.ProjectTemplate.Services.SecurityService - MyService constructor
+2014-12-16 11:13:48,446 [7] DEBUG TEKenable.ProjectTemplate.Services.SecurityService - MyService constructor
+2014-12-16 11:14:44,537 [6] DEBUG TEKenable.ProjectTemplate.Services.SecurityService - MyService constructor
+2014-12-16 11:14:47,193 [32] DEBUG TEKenable.ProjectTemplate.Services.SecurityService - MyService constructor
+2014-12-16 11:14:47,240 [32] DEBUG TEKenable.ProjectTemplate.Web.Controllers.HomeController - Home Controller initialized
+2014-12-16 11:16:15,291 [32] DEBUG TEKenable.ProjectTemplate.Services.SecurityService - MyService constructor
+2014-12-16 11:16:15,306 [32] DEBUG TEKenable.ProjectTemplate.Web.Controllers.HomeController - Home Controller initialized
+2014-12-16 11:17:26,953 [42] INFO ASP.global_asax - Application_Start executed
+2014-12-16 11:17:27,468 [44] DEBUG TEKenable.ProjectTemplate.Services.SecurityService - MyService constructor
+2014-12-16 11:17:35,517 [44] DEBUG TEKenable.ProjectTemplate.Web.Controllers.HomeController - Home Controller initialized
+2014-12-16 11:18:33,777 [41] DEBUG TEKenable.ProjectTemplate.Services.SecurityService - MyService constructor
+2014-12-16 11:18:33,793 [41] DEBUG TEKenable.ProjectTemplate.Web.Controllers.HomeController - Home Controller initialized
+2014-12-16 11:18:49,277 [44] DEBUG TEKenable.ProjectTemplate.Services.SecurityService - MyService constructor
+2014-12-16 11:18:49,292 [44] DEBUG TEKenable.ProjectTemplate.Web.Controllers.HomeController - Home Controller initialized
+2014-12-16 11:19:23,608 [44] DEBUG TEKenable.ProjectTemplate.Services.SecurityService - MyService constructor
+2014-12-16 11:19:23,624 [44] DEBUG TEKenable.ProjectTemplate.Web.Controllers.HomeController - Home Controller initialized
+2014-12-16 11:20:21,358 [50] DEBUG TEKenable.ProjectTemplate.Services.SecurityService - MyService constructor
+2014-12-16 11:20:21,374 [50] DEBUG TEKenable.ProjectTemplate.Services.SecurityService - MyService constructor
+2014-12-16 11:20:37,375 [41] DEBUG TEKenable.ProjectTemplate.Services.SecurityService - MyService constructor
+2014-12-16 11:20:37,390 [41] DEBUG TEKenable.ProjectTemplate.Services.SecurityService - MyService constructor
+2014-12-16 11:20:38,163 [44] DEBUG TEKenable.ProjectTemplate.Services.SecurityService - MyService constructor
+2014-12-16 11:20:38,179 [44] DEBUG TEKenable.ProjectTemplate.Services.SecurityService - MyService constructor
+2014-12-16 11:20:45,570 [6] DEBUG TEKenable.ProjectTemplate.Services.SecurityService - MyService constructor
+2014-12-16 11:20:45,586 [6] DEBUG TEKenable.ProjectTemplate.Services.SecurityService - MyService constructor
+2014-12-16 11:20:58,280 [7] DEBUG TEKenable.ProjectTemplate.Services.SecurityService - MyService constructor
+2014-12-16 11:20:58,296 [7] DEBUG TEKenable.ProjectTemplate.Services.SecurityService - MyService constructor
+2014-12-16 11:20:58,343 [50] DEBUG TEKenable.ProjectTemplate.Web.Controllers.HomeController - Home Controller initialized
+2014-12-16 11:20:58,358 [51] DEBUG TEKenable.ProjectTemplate.Services.SecurityService - MyService constructor
+2014-12-16 11:21:01,409 [50] DEBUG TEKenable.ProjectTemplate.Services.SecurityService - MyService constructor
+2014-12-16 11:21:04,558 [6] DEBUG TEKenable.ProjectTemplate.Services.SecurityService - MyService constructor
+2014-12-16 11:21:11,357 [6] DEBUG TEKenable.ProjectTemplate.Services.SecurityService - MyService constructor
+2014-12-16 11:21:11,482 [50] DEBUG TEKenable.ProjectTemplate.Services.SecurityService - MyService constructor
+2014-12-16 11:21:11,498 [50] DEBUG TEKenable.ProjectTemplate.Web.Controllers.HomeController - Home Controller initialized
+2014-12-16 11:23:51,567 [51] DEBUG TEKenable.ProjectTemplate.Services.SecurityService - MyService constructor
+2014-12-16 11:23:51,593 [51] DEBUG TEKenable.ProjectTemplate.Services.AdminService - Admin constructor
+2014-12-16 11:23:51,600 [51] DEBUG TEKenable.ProjectTemplate.Web.Controllers.AdminController - Admin Controller initialized
+2014-12-16 11:23:51,645 [41] DEBUG TEKenable.ProjectTemplate.Services.SecurityService - MyService constructor
+2014-12-16 11:24:14,780 [42] INFO ASP.global_asax - Application_Start executed
+2014-12-16 11:24:15,742 [6] DEBUG TEKenable.ProjectTemplate.Services.SecurityService - MyService constructor
+2014-12-16 11:24:41,408 [6] DEBUG TEKenable.ProjectTemplate.Web.Controllers.HomeController - Home Controller initialized
+2014-12-16 11:28:08,902 [42] INFO ASP.global_asax - Application_Start executed
+2014-12-16 11:28:09,473 [44] DEBUG TEKenable.ProjectTemplate.Services.SecurityService - MyService constructor
+2014-12-16 11:28:27,651 [44] DEBUG TEKenable.ProjectTemplate.Web.Controllers.HomeController - Home Controller initialized

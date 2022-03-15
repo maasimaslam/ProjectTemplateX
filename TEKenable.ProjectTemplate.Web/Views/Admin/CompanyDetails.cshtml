@@ -1,0 +1,153 @@
+﻿@model CompanyInModel
+
+@{
+    if (Model.CompanyId <= 0)
+    {
+        ViewBag.Title = "Create";
+    }
+    else
+    {
+        ViewBag.Title = "Edit";
+    }    
+}
+
+<div class="row">
+    <div class="col-md-12">
+        <div class="panel panel-default">
+            <div class="panel-heading"><h1>Company @Model.CompanyName</h1></div>
+            <div class="panel-body">
+
+                @using (Html.BeginForm("CompanyDetails", "Admin", FormMethod.Post, new { @class = "form-horizontal", enctype = "multipart/form-data" }))
+                {
+                    @Html.AntiForgeryToken()
+                    if (TempData["SuccessMessage"] != null)
+                    {
+                        <div class="alert alert-success">
+                            <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+                            <strong>Success!</strong> @TempData["SuccessMessage"]
+                        </div>
+                    }
+
+                    @Html.ValidationSummary(true)
+                    @Html.HiddenFor(model => model.CompanyId)
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <div class="form-group">
+                                @Html.LabelFor(model => model.CompanyName, new { @class = "control-label col-sm-4" })
+                                <div class="col-sm-8">
+                                    @Html.TextBoxFor(model => model.CompanyName,htmlAttributes: new { @class = "form-control input-sm" })
+                                    @Html.ValidationMessageFor(model => model.CompanyName)
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="form-group">
+                                @Html.LabelFor(model => model.CompanyType, new { @class = "control-label col-sm-4" })
+                                <div class="col-sm-8">
+                                    @Html.TextBoxFor(model => model.CompanyType, new { @class = "form-control input-sm" })
+                                    @Html.ValidationMessageFor(model => model.CompanyType)
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <div class="form-group">
+                                @Html.LabelFor(model => model.CompanyBusiness, new { @class = "control-label col-sm-4" })
+                                <div class="col-sm-8">
+                                    @Html.TextBoxFor(model => model.CompanyBusiness, new { @class = "form-control input-sm" })
+                                    @Html.ValidationMessageFor(model => model.CompanyBusiness)
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="form-group">
+                                @Html.LabelFor(model => model.CompanyDepartment, new { @class = "control-label col-sm-4" })
+                                <div class="col-sm-8">
+                                    @Html.TextBoxFor(model => model.CompanyDepartment, new { @class = "form-control input-sm" })
+                                    @Html.ValidationMessageFor(model => model.CompanyDepartment)
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <div class="form-group">
+                                @Html.LabelFor(model => model.CompanyGrade, new { @class = "control-label col-sm-4" })
+                                <div class="col-sm-8">
+                                    @Html.TextBoxFor(model => model.CompanyGrade, new { @class = "form-control input-sm" })
+                                    @Html.ValidationMessageFor(model => model.CompanyGrade)
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <div class="form-group">
+                                @Html.LabelFor(model => model.CompanyWebsite, new { @class = "control-label col-sm-4" })
+                                <div class="col-sm-8">
+                                    @Html.TextBoxFor(model => model.CompanyWebsite, new { @class = "form-control input-sm" })
+                                    @Html.ValidationMessageFor(model => model.CompanyWebsite)
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="form-group">
+                                @Html.LabelFor(model => model.CompanyContact, new { @class = "control-label col-sm-4" })
+                                <div class="col-sm-8">
+                                    @Html.TextBoxFor(model => model.CompanyContact, new { @class = "form-control input-sm" })
+                                    @Html.ValidationMessageFor(model => model.CompanyContact)
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <div class="form-group">
+                                @Html.LabelFor(model => model.CompanyEmail, new { @class = "control-label col-sm-4" })
+                                <div class="col-sm-8">
+                                    @Html.TextBoxFor(model => model.CompanyEmail, new { @class = "form-control input-sm" })
+                                    @Html.ValidationMessageFor(model => model.CompanyEmail)
+                                </div>
+                            </div>
+                        </div>
+                       
+                    </div>
+
+
+
+                    <div class="form-group">
+                        <div class="col-sm-offset-2 col-sm-8">
+                            <input type="submit" value="Save" class="btn btn-primary btn-sm save" />
+                            @Html.ActionLink("Back to Company", "Companies", null, new { @class = "btn btn-default btn-sm" })
+                        </div>
+                    </div>
+                }
+
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+
+            $('#SelectedRoles').select2();
+
+            $('form').submit(function () {
+                if ($(this).valid()) {
+                    $(':submit', this).attr('disabled', 'disabled');
+                }
+            });
+        });
+    </script>
+}

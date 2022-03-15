@@ -1,0 +1,58 @@
+﻿body { padding-top: 70px; }
+
+
+/* styles for validation helpers */
+.field-validation-error {
+    color: #e80c4d;
+    font-weight: bold;
+}
+
+.field-validation-valid {
+    display: none;
+}
+
+input.input-validation-error {
+    border: 1px solid #e80c4d;
+}
+
+input[type="checkbox"].input-validation-error {
+    border: 0 none;
+}
+
+.validation-summary-header {
+    text-decoration: none;
+}
+
+.validation-summary-errors {
+    color: #e80c4d;
+    font-weight: bold;
+    font-size: 1.1em;
+}
+
+.validation-summary-valid {
+    display: none;
+}
+
+/*IE8 and Opera 4-6 only support the old, single-colon CSS2 syntax (:after)*/
+.mandatory-field:after {
+    content: " *";
+}
+
+.validation-message-tooltip {
+    color: #EF1818;
+    font-size: 1.8em;
+    font-weight: bold;
+    padding: 0px 10px 0px 0px;
+}
+
+#validation-summary-accordion a {
+    text-decoration: none;
+}
+
+#validation-summary-accordion li {
+    text-decoration: none;
+}
+
+#modelErrors > .panel-body {
+    background-color: #FAEDED;
+}

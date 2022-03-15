@@ -1,0 +1,118 @@
+﻿@model UserSearchModel
+
+@{
+    ViewBag.Title = "Manage Users";
+}
+
+<div class="row">
+    <div class="col-md-12">
+        <div class="panel panel-default">
+            <div class="panel-heading"><h1>Employees</h1></div>
+            <div class="panel-body">
+                <div class="row">
+                    @using (Html.BeginForm("Users", "Admin", FormMethod.Get))
+                    {
+                        <div class="col-sm-5">
+                            @Html.TextBox("searchString", Model.currentFilter, new { @class = "form-control", placeholder = "Search" })
+                        </div>
+                        <div class="col-sm-7">
+                            <button class="btn btn-default btn-sm" type="submit"><span class="glyphicon glyphicon-plus-sign"></span>&nbsp;Search</button>
+                            <a href="@Url.Action("UserDetails")" class="btn btn-default btn-sm"><span class="glyphicon glyphicon-plus-sign"></span>&nbsp;Add New Employee</a>
+                        </div>
+                    }
+                </div>
+                <div class="table-responsive">
+                    <table class="table table-hover table align-middle">
+                        <thead>
+                            <tr>
+                                <th width="10">#</th>
+                                <th >
+                                    @Html.ActionLink("First Last Name", "Users", new { sortOrder = "Uflname", currentFilter = Model.currentFilter })
+                                </th>
+                                <th>
+                                    @Html.ActionLink("User Name", "Users", new { sortOrder = "Uname", currentFilter = Model.currentFilter })
+                                </th>
+                                <th>
+                                    @Html.ActionLink("Department", "Users", new { sortOrder = "Udepartment", currentFilter = Model.currentFilter })
+                                </th>
+                                <th>
+                                    @Html.ActionLink("Grade", "Users", new { sortOrder = "Ugrade", currentFilter = Model.currentFilter })
+                                </th>
+                                <th>
+                                    @Html.ActionLink("Salary", "Users", new { sortOrder = "Usalary", currentFilter = Model.currentFilter })
+                                </th>
+                                
+                                <th class="col-md-2"></th>
+                            </tr>
+                        </thead>
+                        @{int j = 1; }
+                        @foreach (var item in Model.ListData)
+                        {
+                    <tr id="@item.id">
+                        <td>@j</td>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.first_name) @Html.DisplayFor(modelItem => item.last_name)
+                                
+                            </td>
+                            <td>
+                                <a href="mailto:@Html.DisplayFor(modelItem => item.user_name)">@Html.DisplayFor(modelItem => item.user_name)</a>
+</td>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.UserDepartment)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.EmployeeGrade)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.UserSalary)
+                            </td>
+                          
+                            <td>
+                                @Html.ActionLink("Edit", "UserDetails", new { id = item.id })
+                            </td>
+                    </tr>
+                            j = j + 1;
+                        }
+                    </table>
+                    Page @(Model.ListData.PageCount < Model.ListData.PageNumber ? 0 : Model.ListData.PageNumber) of @Model.ListData.PageCount
+
+                    @Html.PagedListPager(Model.ListData, page => Url.Action("Users",
+                        new
+                        {
+                            page,
+                            sortOrder = Model.CurrentSort,
+                            currentFilter = Model.currentFilter,
+                            currentStyleFilter = Model.currentFilter
+                        }))
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="modalDel" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" data-url="@Url.Action("Delete")">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                <h4 class="modal-title">Modal title</h4>
+            </div>
+            <div class="modal-body">
+                Are you sure you want to delete the User?
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">No</button>
+                <button type="button" class="btn btn-primary" onclick="deleteconfirm();">Yes</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+@section Scripts {
+    <script>
+        $(document).ready(function () {
+
+        });
+    </script>
+}
